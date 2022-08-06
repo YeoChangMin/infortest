@@ -1,0 +1,38 @@
+.inforyou {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+}
+.inforyou img {
+  position: absolute;
+  right: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  background-color: #fff;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  height: 48px;
+}
+.rest_name {
+  width: 88%;
+  height: 100%;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.rest_name h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}

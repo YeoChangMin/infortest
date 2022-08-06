@@ -1,0 +1,68 @@
+{
+  "inforyou": [
+    {
+      "owners": [
+        {
+          "id": 1,
+          "name": "홍서희",
+          "loginId": 1,
+          "pwd": 0,
+          "phoneNum": 1040999275,
+          "store": [
+            {
+              "id": 1,
+              "title": "정선할매",
+              "address": "",
+              "groups": [
+                { "id": 1, "title": "메인메뉴" },
+                { "id": 2, "title": "세트메뉴" },
+                { "id": 3, "title": "메인메뉴" }
+              ],
+              "menus": [
+                {
+                  "id": 1,
+                  "title": "곤드레정식",
+                  "detail": "",
+                  "intro": "",
+                  "state": true,
+                  "price": 0,
+                  "required": [
+                    {
+                      "id": 1,
+                      "title": "소",
+                      "price": 0,
+                      "intro": ""
+                    }
+                  ]
+                }
+              ],
+              "options": [
+                {
+                  "id": 1,
+                  "title": "옵션 1",
+                  "intro": "",
+                  "price": 0
+                }
+              ],
+              "tables": [
+                {
+                  "id": 1,
+                  "orderMenus": {},
+                  "request": "",
+                  "finalPrice": 0,
+                  "time": null
+                }
+              ],
+              "order": [
+                {
+                  "id": 1,
+                  "table": "tableId"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
