@@ -26,7 +26,7 @@
   color: #f5d536;
   margin-bottom: 15px;
 }
-.login_form > button {
+.login_form .login_btn {
   width: 100%;
   height: 48px;
   border-radius: 50px;

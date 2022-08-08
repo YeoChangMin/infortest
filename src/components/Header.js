@@ -12,14 +12,6 @@ export default function Header() {
           height="24"
         />
       </h4>
-      <div className="title">
-        <div className="icon">
-          <img src="../img/icon/fork.png" alt="icon" width="20" />
-        </div>
-        <div className="rest_name">
-          <h2>rest_name</h2>
-        </div>
-      </div>
     </header>
   );
 }

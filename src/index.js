@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Owner from "./Owner";
+import Owner from "./components/Owner";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
