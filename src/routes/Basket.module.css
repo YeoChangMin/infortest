@@ -1,0 +1,19 @@
+.Basket {
+  max-width: 428px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #eee;
+}
+.basket_title {
+  background-color: #fff;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.order_list {
+  background-color: #fff;
+}

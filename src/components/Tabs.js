@@ -2,7 +2,7 @@ import { useState } from "react";
 import MenuManage from "./MenuManage";
 import styles from "./Tabs.module.css";
 
-function Tabs({ ownerInfo }) {
+function Tabs({ storeData }) {
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
@@ -60,7 +60,7 @@ function Tabs({ ownerInfo }) {
               : styles.content
           }
         >
-          <MenuManage ownerInfo={ownerInfo} />
+          <MenuManage storeData={storeData} />
         </div>
 
         <div

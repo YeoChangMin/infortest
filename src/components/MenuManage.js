@@ -1,31 +1,54 @@
+import { useCallback, useEffect, useState } from "react";
+import AddCategory from "./AddCategory";
+
 import MenuList from "./MenuList";
 import "./MenuManage.css";
 
-function MenuManage({ ownerInfo }) {
-  const store = ownerInfo.store[0];
+function MenuManage({ storeData }) {
+  const [loading, setLoading] = useState(true);
+  const [storeInfo, setStoreInfo] = useState({});
 
-  console.log(store.groups);
+  const getStoreInfo = useCallback(() => {
+    setStoreInfo(() => storeData);
+    setLoading(false);
+  }, [storeData]);
+
+  useEffect(() => {
+    getStoreInfo();
+  }, [getStoreInfo]);
+  console.log(storeInfo);
+
   return (
-    <div className="MenuManage">
-      <h4 className="category_title">가게 대표이미지</h4>
-      <div className="rep_img">
-        <img src="./img/icon/추가아이콘.png" alt="추가" />
-      </div>
-      <h4 className="category_title">메뉴 그룹</h4>
-      <ul className="group_bar">
-        {store.groups.map((group) => (
-          <li className="group_item" key={group.id}>
-            {group.title}
-          </li>
-        ))}
-      </ul>
-      {store.groups.map((group) => (
-        <div className="group_list" key={group.id}>
-          <div className="group_title">{group.title}</div>
-          <MenuList menus={store.menus} group={group} />
+    <>
+      {loading ? (
+        <h1>Loading...</h1>
+      ) : (
+        <div className="MenuManage">
+          <h4 className="rep_title">가게 대표이미지</h4>
+          <div className="rep_img">
+            <img src="./img/icon/추가아이콘.png" alt="추가" />
+          </div>
+          <div className="category_title">
+            <h4>메뉴 그룹</h4>
+          </div>
+          <ul className="category_bar">
+            <AddCategory className="category_item" />
+            {storeInfo.categorys.map((category) => (
+              <li className="category_item" key={category.id}>
+                {category.category_name}
+              </li>
+            ))}
+          </ul>
+          <h4 className="category_list_title">메뉴 목록</h4>
+          {storeInfo.categorys.map((category) => (
+            <div className="category_contater" key={category.id}>
+              <div className="category_name">{category.category_name}</div>
+              <MenuList menus={storeInfo.menus} category={category} />
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      )}
+    </>
   );
 }
 

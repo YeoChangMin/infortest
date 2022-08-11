@@ -1,13 +1,10 @@
-import React, { useCallback, useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
-import "./Home.css";
+import "./User.css";
 
-function Home() {
-  const location = useLocation();
+function User() {
   const [loading, setLoading] = useState(true);
-  const [ownerInfo, setOwnerInfo] = useState({});
   const [stores, setStores] = useState([]);
 
   const getStores = async () => {
@@ -16,30 +13,25 @@ function Home() {
     setLoading(false);
   };
 
-  const getOwnerInfo = useCallback(() => {
-    setOwnerInfo(() => location.state.ownerInfo[0]);
-  }, [location.state.ownerInfo]);
-
   useEffect(() => {
     getStores();
-    getOwnerInfo();
-  }, [getOwnerInfo]);
-  console.log(stores, ownerInfo);
+  }, []);
+  console.log(stores);
 
   return (
-    <div className="Home">
+    <div className="User">
       {loading ? (
         <h1>Loading...</h1>
       ) : (
         <>
           <Header />
-          <h2 className="owner_name">{ownerInfo.owner_name}님, 반갑습니다.</h2>
+          <h4 className="store_list_title">가게 목록</h4>
           {stores.map((store) => (
             <Link
-              to={`/main/${store.id}`}
+              to={`/store/${store.id}`}
               state={{ store: store }}
+              className="stores"
               key={store.id}
-              className="store"
             >
               {store.store_name}
             </Link>
@@ -50,4 +42,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default User;

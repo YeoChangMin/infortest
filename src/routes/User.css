@@ -1,0 +1,22 @@
+.User {
+  margin: 0 auto;
+  max-width: 428px;
+}
+
+.store_list_title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.stores {
+  display: block;
+  border: 1px solid #eee;
+  width: 90%;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+}

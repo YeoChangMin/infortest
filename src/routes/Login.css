@@ -1,7 +1,18 @@
+.Login {
+  height: 100%;
+  position: relative;
+
+  max-width: 428px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
 /* 로고 */
 .logo {
   display: block;
-  margin: 80px auto;
+  margin: 0 auto;
+  padding: 70px 0;
 }
 /* 로그인 폼 */
 .login_form {
@@ -68,6 +79,7 @@
 }
 
 /* 입점 신청 버튼 */
+
 .entering_btn {
   height: 48px;
   margin: 60px auto;

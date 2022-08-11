@@ -20,10 +20,14 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  padding-left: 10px;
+  padding: 10px 0px 10px 10px;
 }
 .menu_name {
   font-weight: bold;
+}
+.menu_menu_brief_description {
+  color: #bbb;
+  font-size: 14px;
 }
 .menu_img {
   width: 40%;

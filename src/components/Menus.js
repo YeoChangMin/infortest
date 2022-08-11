@@ -1,17 +1,18 @@
-import "./MenuList.css";
+import { Link } from "react-router-dom";
+import "./Menus.css";
 
-function MenuList({ menus, category }) {
-  const categoryMenu = menus.filter(
-    (menu) => menu.category === category.category_name
-  );
-
+function Menus({ store, category }) {
+  const categoryMenu = store.menus.filter((menu) => menu.category === category);
+  console.log(store);
   return (
     <>
       {categoryMenu.map((menu) => (
-        <div className="menu_list" key={menu.id}>
-          <div className="menu_state">
-            <input type="checkbox" />
-          </div>
+        <Link
+          to={`/store/detail/${menu.id}`}
+          state={{ menu: menu, store: store }}
+          className="menu_list"
+          key={menu.id}
+        >
           <div className="menu_info">
             <div className="menu_name">{menu.menu_name}</div>
             {menu.menu_brief_description ? (
@@ -24,10 +25,10 @@ function MenuList({ menus, category }) {
           <div className="menu_img">
             {menu.imgFile ? <img src={menu.imgFile} alt="메뉴이미지" /> : null}
           </div>
-        </div>
+        </Link>
       ))}
     </>
   );
 }
 
-export default MenuList;
+export default Menus;

@@ -1,0 +1,43 @@
+.Management {
+  background-color: #eee;
+  height: 100vh;
+}
+
+.Management .header {
+  height: 60px;
+  background-color: #66a3d8;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+.container {
+  margin: 20px 20px 0 20px;
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  justify-content: space-around;
+}
+.container .side_bar {
+  background-color: #fff;
+  width: 20%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container .main {
+  background-color: #fff;
+  width: 70%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.contents {
+  margin-top: 20px;
+}
+.owners {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}

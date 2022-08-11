@@ -73,13 +73,12 @@
             {
               "category": "대표메뉴",
               "store_id": 1,
-              "img_id": 1,
               "id": 1,
               "menu_name": "곤드레정식",
               "menu_detail_description": "",
               "menu_brief_description": "메뉴간단소개",
               "menu_state": true,
-              "menu_price": 20000,
+              "menu_price": 0,
               "options": [
                 {
                   "id": 1,
@@ -92,36 +91,21 @@
                   "id": 2,
                   "option_name": "중",
                   "option_description": "옵션 설명",
-                  "option_price": 500,
+                  "option_price": 0,
                   "option_required": true
                 },
                 {
                   "id": 3,
                   "option_name": "대",
                   "option_description": "옵션 설명",
-                  "option_price": 1000,
-                  "option_required": true
-                },
-                {
-                  "id": 4,
-                  "option_name": "추가메뉴 1",
-                  "option_description": "옵션 설명",
                   "option_price": 0,
-                  "option_required": false
-                },
-                {
-                  "id": 5,
-                  "option_name": "추가메뉴 2",
-                  "option_description": "옵션 설명",
-                  "option_price": 1000,
-                  "option_required": false
+                  "option_required": true
                 }
               ]
             },
             {
               "category": "세트메뉴",
               "store_id": 1,
-              "img_id": 1,
               "id": 2,
               "menu_name": "할매스페셜",
               "menu_detail_description": "",
@@ -149,68 +133,6 @@
                   "option_description": "옵션 설명",
                   "option_price": 0,
                   "option_required": true
-                },
-                {
-                  "id": 4,
-                  "option_name": "추가메뉴 1",
-                  "option_description": "옵션 설명",
-                  "option_price": 0,
-                  "option_required": false
-                },
-                {
-                  "id": 5,
-                  "option_name": "추가메뉴 2",
-                  "option_description": "옵션 설명",
-                  "option_price": 0,
-                  "option_required": false
-                }
-              ]
-            },
-            {
-              "category": "메인메뉴",
-              "store_id": 1,
-              "img_id": 1,
-              "id": 3,
-              "menu_name": "만드레정식",
-              "menu_detail_description": "",
-              "menu_brief_description": "메뉴간단소개",
-              "menu_state": true,
-              "menu_price": 20000,
-              "options": [
-                {
-                  "id": 1,
-                  "option_name": "소",
-                  "option_description": "옵션 설명",
-                  "option_price": 0,
-                  "option_required": true
-                },
-                {
-                  "id": 2,
-                  "option_name": "중",
-                  "option_description": "옵션 설명",
-                  "option_price": 500,
-                  "option_required": true
-                },
-                {
-                  "id": 3,
-                  "option_name": "대",
-                  "option_description": "옵션 설명",
-                  "option_price": 1000,
-                  "option_required": true
-                },
-                {
-                  "id": 4,
-                  "option_name": "추가메뉴 1",
-                  "option_description": "옵션 설명",
-                  "option_price": 0,
-                  "option_required": false
-                },
-                {
-                  "id": 5,
-                  "option_name": "추가메뉴 2",
-                  "option_description": "옵션 설명",
-                  "option_price": 1000,
-                  "option_required": false
                 }
               ]
             }

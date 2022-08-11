@@ -1,0 +1,60 @@
+.Store {
+  background-color: #eee;
+  margin: 0 auto;
+  max-width: 428px;
+  height: 100vh;
+}
+.ref_img {
+  height: 225px;
+  width: 100%;
+}
+.ref_img > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 카테고리 바 */
+.category_bar {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  height: 48px;
+}
+.category_bar::-webkit-scrollbar {
+  display: none;
+}
+.category_item {
+  display: inline-block;
+  padding: 10px 14px;
+}
+
+/*카메고리 메뉴들*/
+.categorys {
+  margin-bottom: 10px;
+}
+.category_name {
+  height: 48px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+
+.basket {
+  background-color: #f5d536;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  position: sticky;
+  bottom: 0;
+}
