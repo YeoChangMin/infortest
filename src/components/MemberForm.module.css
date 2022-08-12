@@ -1,0 +1,26 @@
+.member_form {
+  margin: 20px 0 0 0px;
+}
+.form_list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.labels {
+  width: 30%;
+}
+.inputs {
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 5px 5px 5px 10px;
+}
+.confirm_btn {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #66a3d8;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
